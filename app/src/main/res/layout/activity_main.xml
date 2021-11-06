@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="188dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/background"
+        android:onClick="tf"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton13"
+        app:srcCompat="@drawable/tf" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="188dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/background"
+        android:onClick="flutter"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton17"
+        app:srcCompat="@drawable/flutter" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="188dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:onClick="firebase"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton12"
+        app:srcCompat="@drawable/firebase" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="188dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:onClick="cloud"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton11"
+        app:srcCompat="@drawable/cloud" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="188dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@drawable/background"
+        android:onClick="android"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/android" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Please select"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#CDDC39"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton16" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
